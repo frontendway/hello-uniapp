@@ -19,22 +19,13 @@
         class="btns-outer"
         :style="{'marginTop': disTop + 'px'}"
       >
-        <u-button
-          type="default"
-          @click="onGoLoginPage"
-        >
+        <u-button @click="onGoLoginPage">
           点击登录
         </u-button>
-        <u-button
-          type="default"
-          @click="onGoDetailPage"
-        >
+        <u-button @click="onGoDetailPage">
           去详情页，并分享详情页
         </u-button>
-        <u-button
-          type="default"
-          @click="onSubscribeMessagePage"
-        >
+        <u-button @click="onSubscribeMessagePage">
           订阅消息
         </u-button>
       </view>
@@ -150,6 +141,5 @@ export default {
 }
 .box{
   overflow: hidden;
-  background: rgb(231, 229, 229);
 }
 </style>
