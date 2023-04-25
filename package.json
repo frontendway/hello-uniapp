@@ -45,7 +45,8 @@
     "test:h5": "cross-env UNI_PLATFORM=h5 jest -i",
     "test:ios": "cross-env UNI_PLATFORM=app-plus UNI_OS_NAME=ios jest -i",
     "test:mp-baidu": "cross-env UNI_PLATFORM=mp-baidu jest -i",
-    "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i"
+    "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i",
+    "lint": "eslint ./src/**/*.{js,jsx,vue,es,tsx} --fix"
   },
   "dependencies": {
     "@dcloudio/uni-app": "^2.0.2-3070920230324001",
@@ -70,6 +71,7 @@
     "@vue/shared": "^3.0.0",
     "core-js": "^3.8.3",
     "flyio": "^0.6.2",
+    "uview-ui": "^2.0.36",
     "vue": ">= 2.6.14 < 2.7",
     "vuex": "^3.2.0"
   },
@@ -88,12 +90,22 @@
     "@dcloudio/webpack-uni-pages-loader": "^2.0.2-3070920230324001",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "autoprefixer": "^8.0.0",
     "babel-plugin-import": "^1.11.0",
     "cross-env": "^7.0.2",
+    "eslint": "^8.39.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-vue": "^9.11.0",
     "jest": "^25.4.0",
     "mini-types": "*",
     "miniprogram-api-typings": "*",
+    "node-sass": "^4.14.0",
     "postcss-comment": "^2.0.0",
+    "postcss-loader": "^7.2.4",
+    "sass-loader": "^8.0.2",
     "vue-template-compiler": ">= 2.6.14 < 2.7"
   },
   "browserslist": [

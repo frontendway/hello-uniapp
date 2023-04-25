@@ -1,10 +1,51 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
 		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
+			"path": "pages/home/home",
+			"style":  {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true
 			}
+		},
+		{
+			"path": "pages/message/message"
+		},
+		{
+			"path": "pages/hot/hot"
+		},
+		{
+			"path": "pages/center/center"
+		}
+	],
+	"subPackages": [
+		{
+			"root": "sub-pkg",
+			"pages": [
+				{
+					"path": "search/search",
+					"style":  {
+						"navigationBarTitleText": "search"
+					}
+				},
+				{
+					"path": "login/login",
+					"style":  {
+						"navigationBarTitleText": "login"
+					}
+				},
+				{
+					"path": "detail/detail",
+					"style":  {
+						"navigationBarTitleText": "detail"
+					}
+				},
+				{
+					"path": "subscribe-message/subscribe-message",
+					"style":  {
+						"navigationBarTitleText": "订阅消息"
+					}
+				}
+			]
 		}
 	],
 	"globalStyle": {
@@ -12,5 +53,25 @@
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"list": [
+			{
+				"pagePath": "pages/home/home",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/message/message",
+				"text": "消息"
+			},
+			{
+				"pagePath": "pages/hot/hot",
+				"text": "热门"
+			},
+			{
+				"pagePath": "pages/center/center",
+				"text": "中心"
+			}
+		]
 	}
 }
