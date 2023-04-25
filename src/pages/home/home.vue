@@ -47,22 +47,14 @@ export default {
       statusBarHeight: 0,
       disTop: 0,
       list: [
-        {
-          name: '待收货'
-        },
-        {
-          name: '待付款'
-        },
+        { name: '待收货' },
+        { name: '待付款' },
         {
           name: '待评价',
           count: 5
         },
-        {
-          name: '待收货'
-        },
-        {
-          name: '待付款'
-        },
+        { name: '待收货' },
+        { name: '待付款' },
         {
           name: '待评价',
           count: 5
